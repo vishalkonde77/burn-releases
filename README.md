@@ -16,6 +16,8 @@ The numbers are pace aware. They stay calm while you are comfortably inside your
 
 Click the menu bar to open the full panel. Choose Classic, Classic with Heroes or Rails to see your session and longer budgets, reset countdowns and usage history. Supported accounts also show separate model allowances and a breakdown of model usage recorded on this Mac.
 
+Plan badges follow your current subscription: Pro, Max 5x or Max 20x for Claude, and Plus, Pro 5x or Pro 20x for Codex. The small macOS widget shows the full plan too.
+
 Burn includes an optional small widget in the macOS widget gallery. It can also send notifications when you cross a usage level or start running hot.
 
 ## Requirements
@@ -42,7 +44,7 @@ Burn checks this repository once a day on its own. When a newer version is here 
 
 ## Privacy
 
-Burn contacts Anthropic and OpenAI to read your usage using the sign-in already saved on this Mac. If you use Notion AI, it reads that usage through your signed-in Notion desktop app. Burn also contacts GitHub to check for and download app updates. There is no analytics and no separate Burn account to create.
+Burn contacts Anthropic and OpenAI to read your usage and current plan using the sign-in already saved on this Mac. If you use Notion AI, it reads that usage through your signed-in Notion desktop app. Burn also contacts GitHub to check for and download app updates. There is no analytics and no separate Burn account to create.
 
 The figures it gets back are kept in a plain text file on your Mac at `~/Library/Application Support/Burn/state.json`, which you are welcome to read from your own scripts. It stays current while Burn is running.
 
