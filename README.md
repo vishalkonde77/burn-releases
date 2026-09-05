@@ -2,7 +2,7 @@
 
 # Burn
 
-A Mac menu bar app that shows how much of your Claude and ChatGPT Codex usage you have left, without opening anything.
+A Mac menu bar app that shows your Claude, ChatGPT Codex and Notion AI usage at a glance. A second Claude account appears when one is connected.
 
 This repository holds the downloads only. Burn's source code is private.
 
@@ -10,17 +10,13 @@ This repository holds the downloads only. Burn's source code is private.
 
 ## What It Does
 
-Burn keeps a live reading in your menu bar. The default is a compact one, showing each tool's five hour usage either side of a thin divider:
+Burn keeps a live reading in your menu bar. Choose Inline for one row or Stacked for two rows, then pick the tools, usage windows and countdowns you want to see. You can use different settings on the laptop screen and an external monitor.
 
-```
-◐ 13 | 27
-```
+The numbers are pace aware. They stay calm while you are comfortably inside your window and warm toward red as you start burning faster than the time left allows, so 80 percent with half an hour to go reads very differently from 80 percent with four hours to go.
 
-The numbers are pace aware, which is the part that makes them worth glancing at. They stay calm while you are comfortably inside your window and warm toward red as you start burning faster than the time left allows, so 80 percent with half an hour to go reads very differently from 80 percent with four hours to go. Two roomier layouts are a click away in Settings if you would rather see your longer window and a countdown alongside.
+Click the menu bar to open the full panel. Choose Classic, Classic with Heroes or Rails to see your session and longer budgets, reset countdowns and usage history. Supported accounts also show separate model allowances and a breakdown of model usage recorded on this Mac.
 
-Click the menu bar to open the full panel. There is a card for each tool's current five hour session showing where you stand and how long is left, then meters for your longer budgets with the time until each one resets.
-
-Burn also installs a desktop widget, and can send you a notification when you cross a usage level or start running hot. Both are optional.
+Burn includes an optional small widget in the macOS widget gallery. It can also send notifications when you cross a usage level or start running hot.
 
 ## Requirements
 
@@ -38,15 +34,15 @@ The first install has to be done by hand. Every update after that installs itsel
 4. Open System Settings, go to Privacy and Security, scroll to the bottom, and press **Open Anyway**. Confirm, and Burn will start.
 5. The first time it reads your sign in, macOS asks for permission. Choose **Always Allow** so it stops asking.
 
-Burn has no window of its own. It lives in the menu bar, and everything including Settings is in the dropdown.
+Burn lives in the menu bar. Open its dropdown to reach the Settings window.
 
 ## Updating
 
-Burn checks this repository once a day on its own. When a newer version is here it downloads it, confirms it was signed by the same developer certificate as the copy you are already running, replaces itself, and shows you what changed the next time it starts. There is nothing for you to do.
+Burn checks this repository once a day on its own. When a newer version is here it downloads it, verifies the app and its developer signature, replaces itself, and shows you what changed after relaunching. You can also check from Settings, General, Updates.
 
 ## Privacy
 
-Burn talks to Anthropic and OpenAI and nowhere else, and only to ask for your own usage figures using the sign in your command line tools already saved on this Mac. Nothing is sent anywhere else, there is no analytics, and there is no account to create.
+Burn contacts Anthropic and OpenAI to read your usage using the sign-in already saved on this Mac. If you use Notion AI, it reads that usage through your signed-in Notion desktop app. Burn also contacts GitHub to check for and download app updates. There is no analytics and no separate Burn account to create.
 
 The figures it gets back are kept in a plain text file on your Mac at `~/Library/Application Support/Burn/state.json`, which you are welcome to read from your own scripts. It stays current while Burn is running.
 
