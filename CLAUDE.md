@@ -4,9 +4,9 @@ Working memory for agents in this repo: the conventions and pitfalls an agent ca
 
 ## What Lives Here
 
-- The working tree holds only `CLAUDE.md`, `README.md`, and the `icon.png` it shows.
+- The working tree holds only `CLAUDE.md`, `AGENTS.md`, `README.md`, and the `icon.png` it shows.
 - Each version ships as one GitHub Release carrying exactly one asset named `Burn-<version>.zip` plus plain release notes.
-- Nothing else belongs here, including a generated `AGENTS.md`, which would make a fourth file. `CLAUDE.md` is deliberately left out of the sync that creates one.
+- Nothing else belongs here. `AGENTS.md` is the narrow Codex adapter generated from this file.
 
 ## Rules
 
@@ -18,6 +18,11 @@ Working memory for agents in this repo: the conventions and pitfalls an agent ca
 - Hand edits are limited to `README.md` and `icon.png`, kept honest against what the shipped app actually does, and they go straight to `main`. This overrides the global branch and pull request sequence, because a repository this small has nothing worth branching for.
 - This repository keeps no worklog, changelog, or task queue, and GitHub Issues are switched off on purpose. That overrides the global rules on keeping repository documents current and on Issues being the only queue.
 - Anything reported about Burn is recorded upstream with the source, never on this side.
+
+## Issue Tracking
+
+- GitHub Issues remain disabled in this public distribution repository. Record Burn work in the private source repository and do not create a local substitute queue here.
+- If Issues are enabled here in the future, apply the global lifecycle: search and reuse a matching Issue, maintain accurate context, progress, blockers, acceptance criteria, useful established labels and verification evidence, then close only after verified delivery. Leave incomplete work open and never treat an unrelated or planning-only Issue as implementation authority.
 
 <!-- agents-sync:end-shared -->
 
