@@ -1,4 +1,4 @@
-# CLAUDE.md (burn-releases)
+# CLAUDE.md (ai-burn)
 
 Working memory for agents in this repo: the conventions and pitfalls an agent cannot learn by reading it. The global instructions load alongside this file, and a rule here that deliberately differs from them is marked as an override with its reason. This is the public, source-free distribution repository for Burn, a private macOS menu bar app. Everything here is public the moment it lands. The source, docs, and build system live in a private repository whose instructions win on any conflict.
 
