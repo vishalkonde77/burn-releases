@@ -1,12 +1,11 @@
 # CLAUDE.md (burn-releases)
 
-Working memory for agents in this repo: the conventions and pitfalls an agent cannot learn by reading it. The global instructions load alongside this file, and a rule here that deliberately differs from them is marked as an override with its reason. This is the public, source-free distribution repository for Burn, a private macOS menu bar app. Everything here is public the moment it lands. The source, docs, and build system live in a private repository whose instructions win on any conflict.
+This is Burn's public, source-free release repository. Everything committed here is public immediately, and the private source repository's instructions win on any conflict.
 
 ## What Lives Here
 
 - The working tree holds only `CLAUDE.md`, `AGENTS.md`, `README.md`, and the `icon.png` it shows.
 - Each version ships as one GitHub Release carrying exactly one asset named `Burn-<version>.zip` plus plain release notes.
-- Nothing else belongs here. `AGENTS.md` is the narrow Codex adapter generated from this file.
 
 ## Rules
 
@@ -16,16 +15,5 @@ Working memory for agents in this repo: the conventions and pitfalls an agent ca
 - Never delete, rename, or replace a published `Burn-<version>.zip`, because the app's updater matches that exact asset name and removing one breaks updates in progress. Correcting typos in release note text is fine.
 - Never mark an older release as latest. The updater only moves forward, and a rollback ships from the private side as a new, higher version.
 - Hand edits are limited to `README.md` and `icon.png`, kept honest against what the shipped app actually does, and they go straight to `main`. This overrides the global branch and pull request sequence, because a repository this small has nothing worth branching for.
-- This repository keeps no worklog, changelog, or task queue, and GitHub Issues are switched off on purpose. That overrides the global rules on keeping repository documents current and on Issues being the only queue.
+- This repository keeps no worklog, changelog, or task queue, and GitHub Issues are switched off on purpose, so the `file-issue` skill cannot run here. That overrides the global rules on keeping repository documents current and on Issues being the only queue.
 - Anything reported about Burn is recorded upstream with the source, never on this side.
-
-## Issue Tracking
-
-- GitHub Issues remain disabled in this public distribution repository. Record Burn work in the private source repository and do not create a local substitute queue here.
-- If Issues are enabled here in the future, apply the global lifecycle: search and reuse a matching Issue, maintain accurate context, progress, blockers, acceptance criteria, useful established labels and verification evidence, then close only after verified delivery. Leave incomplete work open and never treat an unrelated or planning-only Issue as implementation authority.
-
-<!-- agents-sync:end-shared -->
-
-## Claude Code Specific
-
-- The `file-issue` skill cannot run here, because Issues are disabled.
