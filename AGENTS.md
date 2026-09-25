@@ -1,6 +1,10 @@
 # AGENTS.md
 
-This public repository distributes Burn release metadata and assets. Every commit is public immediately, and the private source repository's instructions win on any conflict. Claude Code and Codex both read this file; its terse style is not a model for replies.
+This public repository distributes Burn release metadata and assets. Claude Code and Codex both read this file; its terse style is not a model for replies.
+
+## What This Is
+
+- Every commit is public immediately, and the private source repository's instructions win on any conflict.
 
 ## Public Release Boundaries
 
