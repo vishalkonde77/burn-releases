@@ -1,4 +1,4 @@
-# Burn Public Releases Instructions
+# AGENTS.md
 
 This public repository distributes Burn release metadata and assets. Every commit is public immediately.
 
