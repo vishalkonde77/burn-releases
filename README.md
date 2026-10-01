@@ -40,7 +40,7 @@ The first install has to be done by hand. Every update after that installs itsel
 4. Open System Settings, go to Privacy and Security, scroll to the bottom, and press **Open Anyway**. Confirm, and Burn will start.
 5. The first time it reads your sign in, macOS asks for permission. Choose **Always Allow** so it stops asking.
 
-Burn lives in the menu bar. Open its dropdown to reach the Settings window.
+Burn lives in the menu bar. Click it, then the Settings button at the bottom of the panel (or press ⌘, while the panel is open), to change what it shows.
 
 ## Updating
 
