@@ -50,7 +50,7 @@ Burn checks this repository once a day on its own. When a newer version is here 
 
 Burn contacts Anthropic and OpenAI to read your usage and current plan using the sign-in already saved on this Mac. While Notion AI support is paused, Burn reads nothing from Notion. Burn also contacts GitHub to check for and download app updates. There is no analytics and no separate Burn account to create.
 
-The figures it gets back are kept in a plain text file on your Mac at `~/Library/Application Support/Burn/state.json`, which you are welcome to read from your own scripts. It stays current while Burn is running. Your usage history for the Analytics window is kept in a local database in the same folder and never leaves your Mac.
+The figures it gets back are kept in a plain text file on your Mac at `~/Library/Application Support/Burn/state.json`, which you are welcome to read from your own scripts. It stays current while Burn is running. Your usage history for the Analytics window is kept in a local database in the same folder.
 
 ## Source Code
 
