@@ -16,6 +16,11 @@ This public repository distributes Burn release metadata and assets. Claude Code
 - Limit hand edits to `README.md` and `icon.png`, accurate to the shipped app, and deliver them directly to `main`; this overrides the global branch and pull request sequence, because a repository this small has nothing worth branching for.
 - The only other file is `CLAUDE.md`, holding exactly `@AGENTS.md` so Claude Code loads this file. Never add anything else to it or delete it.
 
+## Delivery and Cleanup
+
+- Complete authorized edits through their permitted delivery route, verify the intended result on remote `main`, and clean up only the task's delivered, inactive branches and temporary checkouts. A local commit or pending pull request is not completion; preserve explicit holds, repository protections and unrelated work. Record direct edits in their commit message and upstream task.
+- Keep non-release mockups, handoffs and recovery files outside this public repository under the upstream artifact policy. Never publish private storage names, paths or links here. Published release assets remain here under the updater contract above.
+
 ## Issue Tracking
 
 - GitHub Issues are disabled. Do not create a local task queue, worklog, or changelog here; anything reported about Burn is recorded upstream with the source.
